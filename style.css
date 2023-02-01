@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #a99a9a;
+  align-items: center;
+}
+
+.titlebar {
+  height:3vh;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  background-color: rgb(83 153 73 / 90%);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100vw;
+}
+
+.js-code-output-container{
+  width: 100vw;
+  background-color: #a99a9a;
+  height: 6vh;
+  font-size: 3rem;
+  text-align: center;
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bodycontainer {
+  background-color: #a99a9a;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  padding: 10vw;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  box-sizing: border-box;
+}
+
+.bodycontainer > .tiles {
+  display: flex;
+  background-color: rgb(214, 201, 201);
+  margin:10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  /* aspect-ratio: 1;  maybe if element grows past _width*/
+  
+}
+
+.footer {
+  background-color: rgba(182, 182, 182, 0.26);
+  height:3vh;
+  position:absolute;
+  bottom:0;
+  width: 100%;
+
+}
+
